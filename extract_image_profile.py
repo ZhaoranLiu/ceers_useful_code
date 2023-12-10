@@ -31,12 +31,12 @@ from matplotlib.pyplot import MultipleLocator
 
 
 ## The seg map and sci map must have same size & wcs ##
-def extract_light_profile(id, sci, seg, xcen, ycen, half_box_size, direction, sigma=1.0, sigma_clip_threshold=5.0):
+def extract_light_profile(id, sci, seg, xcen, ycen, box_half_size, direction, sigma=1.0, sigma_clip_threshold=5.0):
 
     hdu_sci = fits.open(sci)
     hdu_seg = fits.open(seg)
     sci_cut = hdu_sci[0].data[int(ycen-box_half_size):int(ycen+box_half_size), int(xcen-box_half_size):int(xcen+box_half_size)]
-    seg_cut = hdu[0].data[int(ycen-box_half_size):int(ycen+box_half_size), int(xcen-box_half_size):int(xcen+box_half_size)]
+    seg_cut = hdu_seg[0].data[int(ycen-box_half_size):int(ycen+box_half_size), int(xcen-box_half_size):int(xcen+box_half_size)]
     
     for k in range(len(seg_cut[0])):
         for j in range(len(seg_cut)):
@@ -45,9 +45,9 @@ def extract_light_profile(id, sci, seg, xcen, ycen, half_box_size, direction, si
                 sci_cut[j][k] = 0
 
     if direction == 'R':
-        profile = np.sum(box, axis=1)
+        profile = np.sum(sci_cut, axis=1)
     elif direction == 'C':
-        profile = np.sum(box, axis=0)
+        profile = np.sum(sci_cut, axis=0)
     else:
         raise ValueError("Invalid direction. Use 'R' or 'C'.")
 
@@ -57,4 +57,4 @@ def extract_light_profile(id, sci, seg, xcen, ycen, half_box_size, direction, si
     smoothed_profile = gaussian_filter1d(clipped_profile, sigma=sigma, mode='nearest')
     #normalized_profile = smoothed_profile / np.max(smoothed_profile)
 
-    return smoothed_profile
+    return sci_cut, seg_cut, smoothed_profile
