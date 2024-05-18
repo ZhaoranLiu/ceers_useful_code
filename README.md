@@ -4,7 +4,7 @@ A tool for reducing and analyzing JWST NIRCam grism data.
 
 ## Installation
 ~~~~~~~~~~~~~
-pip install mygrism
+pip install my_grism
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 or 
 ~~~~~~~~~~~~~
