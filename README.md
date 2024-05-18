@@ -1,21 +1,15 @@
 # MyGrism
 
-**A tool for reducing and analyzing JWST NIRCam grism data.
+-A tool for reducing and analyzing JWST NIRCam grism data.
 
-
+Installation
 ~~~~~~~~~~~~~
-
+pip install mygrism
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. code-block:: bash
-
-    pip install mygrism
-
-or
-
-.. code-block:: bash
-
-    python setup.py install
+or 
+~~~~~~~~~~~~~
+python setup.py installm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Usage
 ~~~~~
