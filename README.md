@@ -1,26 +1,27 @@
 # MyGrism
 
--A tool for reducing and analyzing JWST NIRCam grism data.
+A tool for reducing and analyzing JWST NIRCam grism data.
 
-Installation
+## Installation
 ~~~~~~~~~~~~~
 pip install mygrism
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 or 
 ~~~~~~~~~~~~~
-python setup.py installm
+python setup.py install
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Usage
-~~~~~
+## Caveats
 
 **Please set your CRDS path in the core.py first:**
+~~~~~~~~~~~~~
 
-.. code-block:: python
+import os
 
-    import os
+os.environ['CRDS_PATH'] = '…'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    os.environ['CRDS_PATH'] = '…'
+**Please edit config.py to specify the correct path and name for your data**
 
 ## If you want to do within 5 steps
 
@@ -32,21 +33,17 @@ Usage
     mygrism spectra_extration
     mygrism plot_spectra
 
-## After you finished the first 3 steps, you can easily change the catalog in config.py and only rerun the ‘spectra_extration’ and ‘plot_spectra’
+ After you finished the first 3 steps, you can easily change the catalog in config.py and only rerun the ‘spectra_extration’ and ‘plot_spectra’
 
 ## If you want to do the reduction step by step
-Please check out the cli.py to see the commands:
-.. code-block:: bash
-
+Please check out the cli.py to see the commands or type:
     mygrism --help
 
 ## Produced background-subtracted images and continuum-subtracted images:
-.. code-block:: bash
 
     ./grism_cal/plots
 
 ## Please make sure the project structure is:
-.. code-block:: bash
 
     xxx/
     ├── my_grism/
