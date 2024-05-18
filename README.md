@@ -1,1 +1,6 @@
-# Attempting to subtract the bright continuum spectrum from the WFSS using optimal extraction algorithm
+# MyGrism
+
+**Please set your CRDS path in the `core.py` first:**
+
+```python
+os.environ['CRDS_PATH'] = '…'
