@@ -1,0 +1,10 @@
+astropy
+photutils
+numpy
+scipy
+matplotlib
+tqdm
+jwst
+crds
+tshirt
+asdf

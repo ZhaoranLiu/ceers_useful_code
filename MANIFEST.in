@@ -1,0 +1,4 @@
+include my_grism/data/GRISM_NIRCAM/NIRCAM_LW_POM_ModA_trans.fits
+include my_grism/data/GRISM_NIRCAM/NIRCAM_LW_POM_ModB_trans.fits
+include my_grism/data/FSun_cal/FSun_SpecCov_F444W_A_R.fits
+include my_grism/data/FSun_cal/FSun_SpecCov_F444W_B_R.fits
