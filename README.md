@@ -5,8 +5,6 @@ A tool for reducing and analyzing grism data.
 Demonstration
 ~~~~~~~~~~~~~
 .. image:: ./demo.gif
-
-Installation & Documentation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
