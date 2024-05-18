@@ -1,8 +1,8 @@
-MyGrism
+#MyGrism
 
-A tool for reducing and analyzing grism data.
+**A tool for reducing and analyzing JWST NIRCam grism data.
 
-Demonstration
+
 ~~~~~~~~~~~~~
 .. image:: ./demo.gif
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
