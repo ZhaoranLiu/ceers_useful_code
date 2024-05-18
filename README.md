@@ -56,3 +56,6 @@ Please check out the cli.py to see the commands or type:
     │           ├── FSun_SpecCov_*.fits
     │           └── disper/
     │           └── sensitivity/
+
+## Please download the spectral calibration data from the following link (Produced by Dr. Fengwu Sun):
+    https://drive.google.com/file/d/1RP7XJvP5-KDrA4F2Ofsz4fQzjcd9oOWS/view?usp=sharing
