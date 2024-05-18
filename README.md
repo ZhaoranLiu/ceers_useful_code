@@ -1,10 +1,10 @@
-#MyGrism
+# MyGrism
 
 **A tool for reducing and analyzing JWST NIRCam grism data.
 
 
 ~~~~~~~~~~~~~
-.. image:: ./demo.gif
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: bash
