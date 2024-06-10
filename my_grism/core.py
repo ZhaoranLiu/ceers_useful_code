@@ -49,6 +49,7 @@ bkg_estimator = MedianBackground()
 # Numpy and Scipy modules
 import numpy as np
 from scipy import interpolate, integrate, optimize, stats, ndimage, signal
+import sys
 
 # Matplotlib modules
 import matplotlib.pyplot as plt
@@ -392,6 +393,9 @@ print(np.unique(list_filter), '\n',  np.unique(list_pupil), '\n',
 # 2.1.1 get list of rate.fits by module and pupil
 tmp_filter = USER_FILTER 
 list_rate_this_band = list_rate[(list_filter == tmp_filter) & (list_pupil != 'CLEAR')]
+if len(list_rate_this_band) == 0:
+    print('No file found. Exiting.')
+    sys.exit()
 print(len(list_rate_this_band), 'files,\n', list_rate_this_band[0])
 
 calibrated_dir = USER_CALIBRATED_DIR

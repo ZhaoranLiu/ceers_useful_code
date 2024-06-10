@@ -23,21 +23,25 @@ DEFAULT_POM_PATH_TEMPLATE = os.path.join(BASE_DIR, 'my_grism', 'data', 'GRISM_NI
 DEFAULT_SPEC_DISPER = os.path.join(BASE_DIR, 'my_grism', 'data', 'FSun_cal', 'disper')
 DEFAULT_SPEC_SENSI = os.path.join(BASE_DIR, 'my_grism','data', 'FSun_cal', 'sensitivity')
 
+# Define data directory;
+# !!! Change this !!!
+DIR_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/'
+
 ## grism data
-USER_RATE_FILES_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/goodsn_lw_data/*.fits'
+USER_RATE_FILES_PATH = f'{DIR_PATH}/goodsn_lw_data/*.fits'
 USER_FILTER = 'F444W'
 ## calibrated data
-USER_CALIBRATED_DIR = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/grism_cal/'
+USER_CALIBRATED_DIR = f'{DIR_PATH}/grism_cal/'
 ## the pipeline will generate _1v1.5.fits in the calibrated directory, we will need to grab them in the pipe
-USER_RATE_LV15_FILES_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/grism_cal/*lv1.5.fits'
+USER_RATE_LV15_FILES_PATH = f'{DIR_PATH}/grism_cal/*lv1.5.fits'
 ## direct image data
-USER_SW_RATE_FILES_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/goodsn_sw_image/'
+USER_SW_RATE_FILES_PATH = f'{DIR_PATH}/goodsn_sw_image/'
 ## your astrometry catalog to correct for distortion and offset (I select bright sources from master catalog for this purpose)
-USER_ASTROMETRIC_CATALOG_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/astrometry/wcs_match_for_goodsn.fits'
+USER_ASTROMETRIC_CATALOG_PATH = f'{DIR_PATH}/astrometry/wcs_match_for_goodsn.fits'
 ## source catalog for spectra extraction
-USER_TB_F444W_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/spectra_extraction/jaden_halpha_candidate.cat'
+USER_TB_F444W_PATH = f'{DIR_PATH}/spectra_extraction/jaden_halpha_candidate.cat'
 ##  the place for your extracted spectra
-USER_OUTPUT_SPECTRA_PATH = '/Volumes/Extreme_S4/test_my_grism/my_grism/test/spectra_extraction/jades_ha_spectra'
+USER_OUTPUT_SPECTRA_PATH = f'{DIR_PATH}/spectra_extraction/jades_ha_spectra'
 # F444W image
 USER_PATH_LW = '/Volumes/Extreme_S4/zhaoran_wfss/wfss/hlsp_fresco_jwst_nircam_goods-n_f444w_v1.0_sci.fits'
 USER_TARGET = 'GDN'
