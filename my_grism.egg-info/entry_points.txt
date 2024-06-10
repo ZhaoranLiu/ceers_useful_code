@@ -1,2 +1,0 @@
-[console_scripts]
-mygrism = my_grism.cli:main
