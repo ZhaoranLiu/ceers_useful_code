@@ -11,15 +11,19 @@ or
 python setup.py install
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+## External dependency
+~~~~~~~~~~~~~~~~~~~~~~
+pip install git+https://github.com/npirzkal/GRISMCONF.git
+~~~~~~~~~~~~~~~~
+
 ## Caveats
 
-**Please set your CRDS path in the core.py first:**
-~~~~~~~~~~~~~
+**Please set your JWST CRDS path by following the instruction `here <https://jwst-pipeline.readthedocs.io/en/latest/jwst/user_documentation/reference_files_crds.html>`__
 
-import os
-
-os.environ['CRDS_PATH'] = '…'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+echo $CRDS
+~~~~~~~~~~
+This should return the current path you have.
 
 **Please edit config.py to specify the correct path and name for your data**
 

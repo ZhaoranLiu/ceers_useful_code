@@ -71,7 +71,7 @@ from multiprocessing import Pool, Lock, get_context
 import grismconf
 import pysiaf
 import asdf
-os.environ['CRDS_PATH'] = '/Volumes/Extreme_S4/zhaoran_wfss/crds_cache'
+# os.environ['CRDS_PATH'] = '/Volumes/Extreme_S4/zhaoran_wfss/crds_cache'
 
 os.environ['CRDS_SERVER_URL'] = 'https://jwst-crds.stsci.edu'
 import crds
