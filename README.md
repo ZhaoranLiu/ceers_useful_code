@@ -18,7 +18,7 @@ pip install git+https://github.com/npirzkal/GRISMCONF.git
 
 ## Caveats
 
-**Please set your JWST CRDS path by following the instruction `here <https://jwst-pipeline.readthedocs.io/en/latest/jwst/user_documentation/reference_files_crds.html>`__
+**Please set your JWST CRDS path by following the instruction [here](https://jwst-pipeline.readthedocs.io/en/latest/jwst/user_documentation/reference_files_crds.html>). Then, try:
 
 ~~~~~~~~~~
 echo $CRDS
@@ -36,7 +36,7 @@ This should return the current path you have.
     mygrism spectra_extration
     mygrism plot_spectra
 
- After you finished the first 3 steps, you can easily change the catalog in config.py and only rerun the ‘spectra_extration’ and ‘plot_spectra’
+ After you finished the first 3 steps, you can easily change the catalog in config.py and only rerun the `spectra_extration` and `plot_spectra`
 
 ## If you want to do the reduction step by step
 Please check out the cli.py to see the commands or type:
