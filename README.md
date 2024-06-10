@@ -9,12 +9,12 @@ pip install my_grism
 or 
 ~~~~~~~~~~~~~
 python setup.py install
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 ## External dependency
 ~~~~~~~~~~~~~~~~~~~~~~
 pip install git+https://github.com/npirzkal/GRISMCONF.git
-~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
 
 ## Caveats
 
